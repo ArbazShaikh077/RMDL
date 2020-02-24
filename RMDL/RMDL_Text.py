@@ -189,7 +189,7 @@ def Text_Classification(x_train, y_train, x_test,  y_test, batch_size=128,
         # model_DNN.append(Sequential())
         try:
             print("DNN " + str(i))
-            filepath = "content/drive/My Drive/weights_DNN_" + str(i) + ".hdf5"
+            filepath = "/content/drive/My Drive/weights_DNN_" + str(i) + ".hdf5"
             checkpoint = ModelCheckpoint(filepath,
                                          monitor='val_acc',
                                          verbose=1,
